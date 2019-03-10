@@ -4,6 +4,13 @@ import time
 import msvcrt
 current_time_in_micro = lambda: int(round(time.time() * 1000000))
 
+if( len(sys.argv) != 2):
+	print "\nUsage: {} SERIAL_PORT\n".format(sys.argv[0])
+	print "Readme.md is on GitHub: \"https://github.com/SamuelePerticarari/Reverse-engineering-MyTV-Remote-Control\"\n"
+	exit()
+
+MySerialPort = sys.argv[1]
+
 def tohex(s):
 	o = ''
 	for c in s:
@@ -16,15 +23,20 @@ def tohex(s):
 	return o # + '--------' + s
 	
 	
+try:
 	
-ser = serial.Serial(
-	port='COM4',\
-	baudrate=2000000,\
-	parity=serial.PARITY_NONE,\
-	stopbits=serial.STOPBITS_ONE,\
-	bytesize=serial.EIGHTBITS,\
-		timeout=0)
+	ser = serial.Serial(
+		port=MySerialPort,\
+		baudrate=2000000,\
+		parity=serial.PARITY_NONE,\
+		stopbits=serial.STOPBITS_ONE,\
+		bytesize=serial.EIGHTBITS,\
+			timeout=0)
 
+except Exception as e:
+	print("EXCEPTION: ".format(e))
+	exit()
+			
 print("Serial connected to: " + ser.portstr)
 
 #print("{}".format(tohex(ser.readline())))
