@@ -25,7 +25,7 @@ git clone "https://github.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Inf
 
 ### Setup the board
 Connect the sensor to the board like that.
-![Setup board](/setup-img/setup.png?raw=true "Setup board")
+![Setup board](https://raw.githubusercontent.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Infrared-Protocol/master/setup-img/setup.png "Setup board")
 
 ### Flash the software to the boars
 1.  Connect the board to your laptop.
@@ -83,7 +83,7 @@ C:\Users\Developer\Desktop\Analyze-MyTV-Remote-Control-Infrared-Protocol\src>
 
 You can visually see some captured infrared signals opening file index.html inside "Signals visualization" folder.
 
-![Graph Channel 1](/Signals%20visualization/sample/Channel%201.png?raw=true)
+![Graph Channel 1](https://raw.githubusercontent.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Infrared-Protocol/master/Signals%20visualization/sample/Channel%201.png)
 
 ## Disclaimer
 
