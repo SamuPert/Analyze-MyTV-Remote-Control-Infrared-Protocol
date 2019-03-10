@@ -20,7 +20,7 @@ Things that you need to have to run the code:
 ### Clone the repository
 
 ```bash
-git clone "https://github.com/SamuelePerticarari/Reverse-engineering-MyTV-Remote-Control.git" "MyTV-Remote-Control-Infrared-Protocol"
+git clone "https://github.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Infrared-Protocol.git" "Analyze-MyTV-Remote-Control-Infrared-Protocol"
 ```
 
 ### Setup the board
@@ -30,14 +30,14 @@ Connect the sensor to the board like that.
 ### Flash the software to the boars
 1.  Connect the board to your laptop.
 2.  Open [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-3.  Open "/MyTV-Remote-Control-Infrared-Protocol/src/Arduino Project/ReadFromInfraredSensor/ReadFromInfraredSensor.ino"
+3.  Open "/Analyze-MyTV-Remote-Control-Infrared-Protocol/src/Arduino Project/ReadFromInfraredSensor/ReadFromInfraredSensor.ino"
 4.  Make sure that board is recognized.
 5.  Flash software.
 
 ### Run the Python program
 
 ```bash
-cd "MyTV-Remote-Control-Infrared-Protocol\src"
+cd "Analyze-MyTV-Remote-Control-Infrared-Protocol\src"
 ```
 Replace COM4 with YOUR serial port.
 ```bash
@@ -54,17 +54,17 @@ python ReadFromSerialAndDecode.py COM4
 ```
 C:\Users\Developer>cd Desktop
 
-C:\Users\Developer\Desktop>git clone "https://github.com/SamuelePerticarari/Reverse-engineering-MyTV-Remote-Control.git" "MyTV-Remote-Control-Infrared-Protocol"
-Cloning into 'MyTV-Remote-Control-Infrared-Protocol'...
+C:\Users\Developer\Desktop>git clone "https://github.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Infrared-Protocol.git" "Analyze-MyTV-Remote-Control-Infrared-Protocol"
+Cloning into 'Analyze-MyTV-Remote-Control-Infrared-Protocol'...
 remote: Enumerating objects: 27, done.
 remote: Counting objects: 100% (27/27), done.
 remote: Compressing objects: 100% (20/20), done.
 remote: Total 27 (delta 7), reused 9 (delta 3), pack-reused 0
 Unpacking objects: 100% (27/27), done.
 
-C:\Users\Developer\Desktop>cd "MyTV-Remote-Control-Infrared-Protocol\src"
+C:\Users\Developer\Desktop>cd "Analyze-MyTV-Remote-Control-Infrared-Protocol\src"
 
-C:\Users\Developer\Desktop\MyTV-Remote-Control-Infrared-Protocol\src>python ReadFromSerialAndDecode.py COM4
+C:\Users\Developer\Desktop\Analyze-MyTV-Remote-Control-Infrared-Protocol\src>python ReadFromSerialAndDecode.py COM4
 Serial connected to: COM4
 WAITING FOR SERIAL TO BE READY...
 PRESS ENTER TO START READING FROM SERIAL...
@@ -76,7 +76,7 @@ END OF SIGNAL...
 DECODED:     11111111 00100000 11110111 00001000 0
 HEX DECODED: 0xff 0x20 0xf7 0x8 0x0
 
-C:\Users\Developer\Desktop\MyTV-Remote-Control-Infrared-Protocol\src>
+C:\Users\Developer\Desktop\Analyze-MyTV-Remote-Control-Infrared-Protocol\src>
 ```
 
 ## Extra
