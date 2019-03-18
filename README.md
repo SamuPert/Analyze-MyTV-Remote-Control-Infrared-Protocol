@@ -27,7 +27,7 @@ git clone "https://github.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Inf
 Connect the sensor to the board like that.
 ![Setup board](https://raw.githubusercontent.com/SamuelePerticarari/Analyze-MyTV-Remote-Control-Infrared-Protocol/master/setup-img/setup.png "Setup board")
 
-### Flash the software to the boars
+### Flash the software to the board
 1.  Connect the board to your laptop.
 2.  Open [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 3.  Open "/Analyze-MyTV-Remote-Control-Infrared-Protocol/src/Arduino Project/ReadFromInfraredSensor/ReadFromInfraredSensor.ino"
