@@ -1,0 +1,1 @@
+Last month I decided to learn a little more about communication protocols, so I picked up the first thing next to me that could send a signal to another device. Near my pc there was the remote control of my television (MyTV). So I set up my Arduino board and acquired the signal sent from the remote control.
